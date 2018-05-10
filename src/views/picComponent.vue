@@ -5,7 +5,7 @@
                 <li v-for="(img, index) in imgArray" :key="index">
                     <a href="#">
                         <img :src='img'>
-                    </a>
+                    </a>，
                 </li>
             </ul>
         </div>
