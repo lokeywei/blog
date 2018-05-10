@@ -37,7 +37,7 @@
                     <img src="https://raw.githubusercontent.com/iview/iview/master/assets/logo.png">
                 </h1>
                 <h2>
-                    <p>Hello world!</p>
+                    <p>Hello lokey!</p>
                     <Button type="ghost" @click="handleStart">Start iView</Button>
                 </h2>
             </Col>
