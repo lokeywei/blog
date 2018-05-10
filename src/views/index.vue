@@ -8,7 +8,8 @@
     <div class="background">
         <headerComponent></headerComponent>
         <!--左边内容部分-->
-         <router-view></router-view>
+        <picComponent></picComponent>
+        <router-view></router-view>
         <!--右侧内容部分-->
         <searchComponent></searchComponent>
         <newsComponent></newsComponent>
@@ -24,6 +25,7 @@
     import tagComponent from './tagComponent.vue'
     import newsComponent from './newsComponent.vue'
     import headerComponent from './headerComponent.vue'
+    import picComponent from './picComponent.vue'
     export default {
         data () {
             return {
@@ -35,7 +37,7 @@
             // alert("start!")
         },
         components: {
-            contactComponent,searchComponent,hotComponent,tagComponent,newsComponent,headerComponent},
+            contactComponent,searchComponent,hotComponent,tagComponent,newsComponent,headerComponent,picComponent},
         methods: {
 
         }
