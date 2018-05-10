@@ -1,0 +1,38 @@
+*{
+    font-family: "微软雅黑";
+}
+.ab_title {
+    text-align: center;
+    position: relative;
+    margin: 20px;
+}
+.ab_title:before {
+    content: "";
+    width: 25%;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+}
+
+.ab_title:after {
+    content: "";
+    width: 25%;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+}
+.clear_fix{
+    height: 10px;
+}
+.content_right{
+    float: left;
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 18%;
+    background-color: white;
+    border-radius:5px;
+}

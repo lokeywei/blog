@@ -1,58 +1,43 @@
 <style scoped>
-    .index {
-        width: 100%;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        text-align: center;
-    }
-
-    .index h1 {
-        height: 150px;
-    }
-
-    .index h1 img {
-        height: 100%;
-    }
-
-    .index h2 {
-        color: #666;
-        margin-bottom: 200px;
-    }
-
-    .index h2 p {
-        margin: 0 0 50px;
-    }
-
-    .index .ivu-row-flex {
-        height: 100%;
+    .background{
+        background-color: gainsboro;
+        height: 2000px;
     }
 </style>
 <template>
-    <div class="index">
-        <Row type="flex" justify="center" align="middle">
-            <Col span="24">
-                <h1>
-                    <img src="https://raw.githubusercontent.com/iview/iview/master/assets/logo.png">
-                </h1>
-                <h2>
-                    <p>Hello lokey1!</p>
-                    <Button type="ghost" @click="handleStart">Start iView</Button>
-                </h2>
-            </Col>
-        </Row>
+    <div class="background">
+        <headerComponent></headerComponent>
+        <!--左边内容部分-->
+         <router-view></router-view>
+        <!--右侧内容部分-->
+        <searchComponent></searchComponent>
+        <newsComponent></newsComponent>
+        <tagComponent></tagComponent>
+        <hotComponent></hotComponent>
+        <contactComponent></contactComponent>
     </div>
 </template>
 <script>
+    import contactComponent from './contactComponent.vue'
+    import searchComponent from './searchComponent.vue'
+    import hotComponent from './hotComponent.vue'
+    import tagComponent from './tagComponent.vue'
+    import newsComponent from './newsComponent.vue'
+    import headerComponent from './headerComponent.vue'
     export default {
-        methods: {
-            handleStart() {
-                this.$Modal.info({
-                    title: 'Bravo',
-                    content: 'Now, enjoy the convenience of iView.'
-                });
+        data () {
+            return {
+                theme1: 'light'
             }
+        },
+        mounted() {
+             this.$router.push("/myArticle")
+            // alert("start!")
+        },
+        components: {
+            contactComponent,searchComponent,hotComponent,tagComponent,newsComponent,headerComponent},
+        methods: {
+
         }
     };
 </script>

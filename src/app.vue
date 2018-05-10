@@ -1,5 +1,11 @@
+<style scoped>
+    .bk{
+        min-width: 1350px;
+    }
+
+</style>
 <template>
-    <div>
+    <div class="bk">
         <router-view></router-view>
     </div>
 </template>
@@ -11,7 +17,7 @@
             };
         },
         mounted() {
-
+             // alert("start")
         },
         beforeDestroy() {
 

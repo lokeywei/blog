@@ -40,3 +40,4 @@ new Vue({
     router: router,
     render: h => h(App)
 });
+import '../static/css/main.css'
