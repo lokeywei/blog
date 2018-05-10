@@ -10,6 +10,7 @@
             </ul>
         </div>
 
+
         <div class="bar">
             <span v-for="(item, index) in imgArray" :key="index"></span>
         </div>
